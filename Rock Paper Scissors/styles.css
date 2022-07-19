@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(105, 172, 239);
+}
+.heading{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap:1em;
+}
+
+.game span{
+    text-transform: capitalize;
+    color:aliceblue
+}
+
+.points{
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+}
+.points > h2{
+    margin-bottom: 0;
+}
+
+.choiceDisplay h2{
+    margin-bottom: 1em;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    text-align: center;
+}
+.choiceDisplay > span{
+    text-transform: capitalize;
+    color:aliceblue;
+    font-size: 1em;
+    letter-spacing: 1em;
+}
+
+.choiceOptions{
+    display:flex;
+    gap:2em;
+}
+.choiceOptions > button{
+    width:6em;
+    height:6em;
+}
+
+#rock{
+    background-image: url('Images/rock.webp');
+    background-size: cover;
+    border:none;
+    border-radius: 0.5em;
+    transition-duration: 0.3s;
+}
+#rock:hover{
+    box-shadow:0 0 1em black;
+    transform: scale(1.2);
+}
+#paper{
+    background-image: url('Images/paper.webp');
+    background-size: cover;
+    border:none;
+    border-radius: 0.5em;
+    transition-duration: 0.3s;
+}
+#paper:hover{
+    box-shadow:0 0 1em black;
+    transform: scale(1.2);
+}
+#scissors{
+    background-image: url('Images/scissors.webp');
+    background-size: cover;
+    border:none;
+    border-radius: 0.5em;
+    transition-duration: 0.3s;
+}
+#scissors:hover{
+    box-shadow:0 0 1em black;
+    transform: scale(1.2);
+}
+.resultDisplay{
+    margin-top: 0;
+}
+
+#result{
+    font-family: 'VT323', monospace;
+    font-size: 2.5em;
+}
